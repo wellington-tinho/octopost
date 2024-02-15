@@ -65,6 +65,7 @@ module.exports = defineConfig({
     {
       files: ['**/*.stories.*'],
       rules: {
+        '@typescript-eslint/no-magic-numbers': 'off',
         'no-console': 'off',
         'no-secrets/no-secrets': 'off',
         'react/forbid-dom-props': 'off',
@@ -75,7 +76,9 @@ module.exports = defineConfig({
             unnamedComponents: 'arrow-function',
           },
         ],
+
         'react/prop-types': 'off',
+        'write-good-comments/write-good-comments': 'off',
       },
     },
     {
@@ -201,14 +204,6 @@ module.exports = defineConfig({
         '@typescript-eslint/no-unnecessary-type-arguments': 'warn',
         '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
         '@typescript-eslint/no-unnecessary-type-constraint': 'warn',
-        '@typescript-eslint/no-unsafe-argument': 'warn',
-        '@typescript-eslint/no-unsafe-assignment': 'warn',
-        '@typescript-eslint/no-unsafe-call': 'warn',
-        '@typescript-eslint/no-unsafe-declaration-merging': 'warn',
-        '@typescript-eslint/no-unsafe-enum-comparison': 'warn',
-        '@typescript-eslint/no-unsafe-member-access': 'warn',
-        '@typescript-eslint/no-unsafe-return': 'warn',
-        '@typescript-eslint/no-unsafe-unary-minus': 'warn',
         '@typescript-eslint/no-unused-expressions': 'warn',
         '@typescript-eslint/no-unused-vars': 'warn',
         '@typescript-eslint/no-use-before-define': 'warn',
